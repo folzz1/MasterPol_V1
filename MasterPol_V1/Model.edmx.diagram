@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8b6cd79f14e4467e8a900f9cf36a31ae" Name="Diagram1">
+        <EntityTypeShape EntityType="MasterPolDBModel.Employees" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.MaterialTypes" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.PartnerProducts" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.Partners" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.PartnerTypes" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.ProductTypes" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.Roles" Width="1.5" PointX="2.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterPolDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MasterPolDBModel.FK_Employees_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPolDBModel.FK_Table_1_Partners" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPolDBModel.FK_Table_1_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPolDBModel.FK_Partners_Partner_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPolDBModel.FK_Products_Product_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterPolDBModel.ProductMaterialTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

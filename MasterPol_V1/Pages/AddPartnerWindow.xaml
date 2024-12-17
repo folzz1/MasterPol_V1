@@ -1,0 +1,47 @@
+﻿<Window x:Class="MasterPol_V1.Pages.AddPartnerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MasterPol_V1.Pages"
+        mc:Ignorable="d"
+        Title="AddPartnerWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Наименование:" Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="Тип:" Grid.Row="1"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="Рейтинг:" Grid.Row="2"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="Юр. адрес:" Grid.Row="3"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="ФИО директора:" Grid.Row="4"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="Телефон:" Grid.Row="5"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBlock Text="Email:" Grid.Row="6"  Style="{StaticResource AddPageTextBlock}"/>
+        <TextBox x:Name="PartnerName" ToolTip="Наименование партнёра" Text="{Binding PartnerName}"/>
+        <ComboBox x:Name="PartnerType" Grid.Column="1" Grid.Row="1" Height="20" Width="120" SelectedItem="{Binding PartnerType}" DisplayMemberPath="Type"/>
+        <TextBox x:Name="PartnerRate" ToolTip="Рейтинг партнёра" Grid.Row="2" Text="{Binding Rate}" PreviewTextInput="PartnerRate_PreviewTextInput"/>
+        <TextBox x:Name="PartnerAddress" ToolTip="Юридический адрес организации" Grid.Row="3" Text="{Binding Address}"/>
+        <TextBox x:Name="DirectorSurname" ToolTip="Фамилия директора организации" Grid.Row="4" Width="60" Margin="-130,0,0,0" Text="{Binding Surname}"/>
+        <TextBox x:Name="DirectorName" ToolTip="Имя директора организации" Grid.Row="4" Width="60" Margin="0,0,0,0" Text="{Binding FirstName}"/>
+        <TextBox x:Name="DirectorLastName" ToolTip="Отчество директора организации" Grid.Row="4" Width="60" Margin="130,0,0,0" Text="{Binding LastName}"/>
+        <TextBox x:Name="PartnerPhone" ToolTip="Телефон организации" Grid.Row="5" Text="{Binding Phone}"/>
+        <TextBox x:Name="PartnerEmail" ToolTip="Адрес электронной почты" Grid.Row="6" Text="{Binding Email}"/>
+
+        <Button x:Name="CancelButton" Content="Отмена" Grid.Row="7" Click="CancelButton_Click"/>
+        <Button x:Name="SaveButton" Grid.Column="1" Content="Сохранить" Grid.Row="7" Click="SaveButton_Click"/>
+
+    </Grid>
+</Window>
