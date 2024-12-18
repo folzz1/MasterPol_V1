@@ -41,10 +41,10 @@ namespace MasterPol_V1.Pages
                             .Select(group => new
                             {
                                 Partner = group.Key,
-                                TotalSales = group.Sum(p => p.ProductsNumber ?? 0) 
+                                TotalSales = group.Sum(p => p.ProductsNumber ?? 0)
                             })
                             .ToList();
-            
+
             foreach (var partner in db.Partners)
             {
                 partner.Discount = 0;

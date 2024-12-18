@@ -34,7 +34,7 @@
         <ComboBox x:Name="PartnerType" Grid.Column="1" Grid.Row="1" Height="20" Width="120" SelectedItem="{Binding PartnerType}" DisplayMemberPath="Type"/>
         <TextBox x:Name="PartnerRate" ToolTip="Рейтинг партнёра" Grid.Row="2" Text="{Binding Rate}" PreviewTextInput="PartnerRate_PreviewTextInput"/>
         <TextBox x:Name="PartnerAddress" ToolTip="Юридический адрес организации" Grid.Row="3" Text="{Binding Address}"/>
-        <TextBox x:Name="DirectorSurname" ToolTip="Фамилия директора организации" Grid.Row="4" Width="60" Margin="-130,0,0,0" Text="{Binding Surname}"/>
+        <TextBox x:Name="DirectorSurname" ToolTip="Фамилия директора организации" Grid.Row="4" Width="60" Margin="-130,0,0,0" Text="{Binding LastName}"/>
         <TextBox x:Name="DirectorName" ToolTip="Имя директора организации" Grid.Row="4" Width="60" Margin="0,0,0,0" Text="{Binding FirstName}"/>
         <TextBox x:Name="DirectorLastName" ToolTip="Отчество директора организации" Grid.Row="4" Width="60" Margin="130,0,0,0" Text="{Binding LastName}"/>
         <TextBox x:Name="PartnerPhone" ToolTip="Телефон организации" Grid.Row="5" Text="{Binding Phone}"/>
