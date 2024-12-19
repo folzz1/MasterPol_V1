@@ -70,6 +70,7 @@
     <Compile Include="Employees.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="MaterialCountMethod.cs" />
     <Compile Include="MaterialTypes.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
